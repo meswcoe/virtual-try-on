@@ -1,0 +1,16 @@
+streamlit
+Pillow
+opencv-python-headless
+matplotlib
+torch
+torchvision
+flask
+flask-ngrok
+tensorboardX
+torchgeometry
+av
+scipy==1.8.0
+gdown
+albumentations
+git+https://github.com/facebookresearch/detectron2.git
+iglovikov_helper_functions
