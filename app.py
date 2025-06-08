@@ -1,3 +1,12 @@
+import subprocess
+
+# Install complex dependencies only once
+if not os.path.exists("detectron2_installed"):
+    subprocess.run(["pip", "install", "git+https://github.com/facebookresearch/detectron2.git"])
+    subprocess.run(["pip", "install", "torchgeometry"])
+    with open("detectron2_installed", "w") as f:
+        f.write("done")
+
 import os
 import streamlit as st
 from PIL import Image
